@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 PROTOBUF_COMMIT = "e34ec6077af141dd5dfc1c334ecdcce3c6b51612"
 
 GOOGLEAPIS_COMMIT = "571ec421ab337d6642dfe9a38f472fefb848d80d"
@@ -46,7 +33,7 @@ proto_api(
     name = "descriptor",
     root = "src",
     files = ["google/protobuf/descriptor.proto"],
-    go_package = "github.com/golang/protobuf/ptypes/descriptor",
+    go_package = "github.com/golang/protobuf/protoc-gen-go/descriptor",
 )
 
 proto_api(
@@ -131,6 +118,8 @@ proto_api(
     ],
     go_package = "google.golang.org/genproto/googleapis/devtools/remoteexecution/v1test",
 )
+#
+#
 #
 #
 #
